@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<Pane fx:id="auto" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#autofill" prefHeight="671.0" prefWidth="1029.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.entrycontroller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#909090" height="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1029.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#909090" height="48.0" layoutY="623.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1029.0" />
+      <TextField fx:id="prno" layoutX="47.0" layoutY="76.0" prefHeight="31.0" prefWidth="203.0" promptText="XXXXXXXX" />
+      <Label layoutX="273.0" layoutY="76.0" prefHeight="31.0" prefWidth="135.0" text="P.R. No." textFill="#909090" />
+      <TextField fx:id="name" layoutX="47.0" layoutY="126.0" prefHeight="31.0" prefWidth="203.0" />
+      <Label layoutX="273.0" layoutY="126.0" prefHeight="31.0" prefWidth="135.0" text="Name" textFill="#909090" />
+      <TextField fx:id="txt1" layoutX="48.0" layoutY="225.0" prefHeight="31.0" prefWidth="203.0" />
+      <Label layoutX="273.0" layoutY="178.0" prefHeight="31.0" prefWidth="135.0" text="Designation Code" textFill="#909090" />
+      <ChoiceBox fx:id="cb1" layoutX="104.0" layoutY="178.0" prefHeight="31.0" prefWidth="90.0" />
+      <ChoiceBox fx:id="cb11" layoutX="50.0" layoutY="271.0" prefHeight="31.0" prefWidth="203.0" />
+      <Label layoutX="273.0" layoutY="271.0" prefHeight="31.0" prefWidth="135.0" text="Department" textFill="#909090" />
+      <ChoiceBox fx:id="cb12" layoutX="50.0" layoutY="366.0" prefHeight="31.0" prefWidth="82.0" />
+      <Label alignment="CENTER" layoutX="127.0" layoutY="366.0" prefHeight="31.0" prefWidth="51.0" text="Cadre" textFill="#909090" />
+      <ChoiceBox fx:id="cb121" layoutX="187.0" layoutY="366.0" prefHeight="31.0" prefWidth="66.0" />
+      <Label layoutX="273.0" layoutY="366.0" prefHeight="31.0" prefWidth="60.0" text="Level" textFill="#909090" />
+      <RadioButton fx:id="rd1" layoutX="371.0" layoutY="131.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="74.0" text="Male" textFill="#909090" />
+      <RadioButton fx:id="rd2" layoutX="445.0" layoutY="132.0" mnemonicParsing="false" text="Female" textFill="#909090" />
+      <ChoiceBox fx:id="cb1211" layoutX="50.0" layoutY="410.0" prefHeight="31.0" prefWidth="203.0" />
+      <Label layoutX="273.0" layoutY="410.0" prefHeight="31.0" prefWidth="101.0" text="Program Type" textFill="#909090" />
+      <ChoiceBox fx:id="cb1212" layoutX="585.0" layoutY="462.0" prefHeight="31.0" prefWidth="217.0" />
+      <Label layoutX="828.0" layoutY="462.0" prefHeight="31.0" prefWidth="74.0" text="Module" textFill="#909090" />
+      <ChoiceBox fx:id="cb111" layoutX="50.0" layoutY="462.0" prefHeight="31.0" prefWidth="203.0" />
+      <Label layoutX="273.0" layoutY="462.0" prefHeight="31.0" prefWidth="135.0" text="Program Category " textFill="#909090" />
+      <TextField fx:id="txt2" layoutX="585.0" layoutY="76.0" prefHeight="31.0" prefWidth="310.0" />
+      <Label layoutX="915.0" layoutY="76.0" prefHeight="31.0" prefWidth="135.0" text="Course Title" textFill="#909090" />
+      <DatePicker fx:id="dtp1" layoutX="585.0" layoutY="142.0" />
+      <Label layoutX="828.0" layoutY="142.0" prefHeight="31.0" prefWidth="74.0" text="From" textFill="#909090" />
+      <DatePicker fx:id="dtp2" layoutX="585.0" layoutY="194.0" />
+      <Label layoutX="828.0" layoutY="194.0" prefHeight="31.0" prefWidth="74.0" text="To" textFill="#909090" />
+      <ChoiceBox fx:id="cb122" layoutX="585.0" layoutY="247.0" prefHeight="31.0" prefWidth="90.0" />
+      <ChoiceBox fx:id="cb123" layoutX="706.0" layoutY="247.0" prefHeight="31.0" prefWidth="90.0" />
+      <Label layoutX="828.0" layoutY="247.0" prefHeight="31.0" prefWidth="74.0" text="Time" textFill="#909090" />
+      <Label alignment="CENTER" layoutX="667.0" layoutY="247.0" prefHeight="31.0" prefWidth="39.0" text="To" textFill="#909090" />
+      <TextField fx:id="txt3" layoutX="585.0" layoutY="302.0" prefHeight="31.0" prefWidth="217.0" />
+      <Label layoutX="828.0" layoutY="302.0" prefHeight="31.0" prefWidth="135.0" text="Faculty" textFill="#909090" />
+      <ChoiceBox fx:id="cb112" layoutX="585.0" layoutY="350.0" prefHeight="31.0" prefWidth="217.0" />
+      <Label layoutX="828.0" layoutY="350.0" prefHeight="31.0" prefWidth="135.0" text="Venue" textFill="#909090" />
+      <TextField fx:id="txt4" layoutX="585.0" layoutY="402.0" prefHeight="31.0" prefWidth="54.0" />
+      <Label alignment="CENTER" layoutX="641.0" layoutY="402.0" prefHeight="31.0" prefWidth="90.0" text="PMS Need" textFill="#909090" />
+      <TextField fx:id="txt5" layoutX="743.0" layoutY="402.0" prefHeight="31.0" prefWidth="54.0" />
+      <Label layoutX="828.0" layoutY="402.0" prefHeight="31.0" prefWidth="90.0" text="Training No." textFill="#909090" />
+      <TextField fx:id="mh" layoutX="194.0" layoutY="522.0" prefHeight="31.0" prefWidth="203.0" />
+      <TextField fx:id="md" layoutX="556.0" layoutY="522.0" prefHeight="31.0" prefWidth="203.0" />
+      <Label alignment="CENTER" layoutX="391.0" layoutY="522.0" prefHeight="31.0" prefWidth="165.0" text="Manhours Completed" textFill="#909090" />
+      <Label alignment="CENTER" layoutX="759.0" layoutY="522.0" prefHeight="31.0" prefWidth="165.0" text="Mandays Completed" textFill="#909090" />
+      <Button fx:id="btn1" layoutX="366.0" layoutY="582.0" mnemonicParsing="false" onAction="#BackAction" prefHeight="31.0" prefWidth="51.0" text="Back" textFill="#909090" />
+      <Button fx:id="btn2" layoutX="506.0" layoutY="582.0" mnemonicParsing="false" onAction="#submit" prefHeight="31.0" prefWidth="101.0" text="Submit" textFill="#909090" />
+      <ChoiceBox fx:id="cb113" layoutX="51.0" layoutY="320.0" prefHeight="31.0" prefWidth="203.0" />
+      <Label layoutX="273.0" layoutY="320.0" prefHeight="31.0" prefWidth="135.0" text="Sub-Department" textFill="#909090" />
+      <Label layoutX="273.0" layoutY="225.0" prefHeight="31.0" prefWidth="135.0" text="Designation" textFill="#909090" />
+      <Label fx:id="wr1" layoutX="429.0" layoutY="76.0" prefHeight="31.0" prefWidth="135.0" text="required" textFill="RED" visible="false" />
+      <Label fx:id="wr11" layoutX="273.0" layoutY="152.0" prefHeight="31.0" prefWidth="101.0" text="required" textFill="RED" visible="false" />
+      <Label fx:id="wr12" layoutX="406.0" layoutY="163.0" prefHeight="31.0" prefWidth="90.0" text="required" textFill="RED" visible="false" />
+      <Label fx:id="wr13" layoutX="361.0" layoutY="225.0" prefHeight="31.0" prefWidth="135.0" text="required" textFill="RED" visible="false" />
+      <Label fx:id="wr14" layoutX="371.0" layoutY="271.0" prefHeight="31.0" prefWidth="135.0" text="required" textFill="RED" visible="false" />
+      <Label fx:id="wr15" layoutX="397.0" layoutY="318.0" prefHeight="31.0" prefWidth="135.0" text="required" textFill="RED" visible="false" />
+      <Label fx:id="wr16" layoutX="324.0" layoutY="366.0" prefHeight="31.0" prefWidth="135.0" text="required" textFill="RED" visible="false" />
+      <Label fx:id="wr17" layoutX="378.0" layoutY="410.0" prefHeight="31.0" prefWidth="135.0" text="required" textFill="RED" visible="false" />
+      <Label fx:id="wr18" layoutX="406.0" layoutY="462.0" prefHeight="31.0" prefWidth="135.0" text="required" textFill="RED" visible="false" />
+      <Label fx:id="wr19" layoutX="908.0" layoutY="111.0" prefHeight="31.0" prefWidth="82.0" text="required" textFill="RED" visible="false" />
+      <Label fx:id="wr110" layoutX="865.0" layoutY="178.0" prefHeight="31.0" prefWidth="135.0" text="required" textFill="RED" visible="false" />
+      <Label fx:id="wr111" layoutX="873.0" layoutY="247.0" prefHeight="31.0" prefWidth="135.0" text="required" textFill="RED" visible="false" />
+      <Label fx:id="wr112" layoutX="880.0" layoutY="302.0" prefHeight="31.0" prefWidth="135.0" text="required" textFill="RED" visible="false" />
+      <Label fx:id="wr113" layoutX="880.0" layoutY="350.0" prefHeight="31.0" prefWidth="135.0" text="required" textFill="RED" visible="false" />
+      <Label fx:id="wr114" layoutX="915.0" layoutY="402.0" prefHeight="31.0" prefWidth="74.0" text="required" textFill="RED" visible="false" />
+      <Label fx:id="wr115" layoutX="885.0" layoutY="462.0" prefHeight="31.0" prefWidth="90.0" text="required" textFill="RED" visible="false" />
+      <Button fx:id="btn11" layoutX="341.0" layoutY="76.0" mnemonicParsing="false" onAction="#autofill" prefHeight="31.0" prefWidth="82.0" text="AutoFill" textFill="#909090" />
+      <ProgressIndicator fx:id="progress" layoutX="439.0" layoutY="76.0" prefHeight="52.0" prefWidth="51.0" progress="0.0" visible="false" />
+   </children>
+</Pane>

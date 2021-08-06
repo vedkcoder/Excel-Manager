@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="976.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewcontroller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#909090" height="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="976.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#909090" height="48.0" layoutY="560.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="976.0" />
+      <TextField fx:id="txt1" layoutX="404.0" layoutY="70.0" />
+      <Label alignment="CENTER" layoutX="221.0" layoutY="70.0" prefHeight="31.0" prefWidth="147.0" style="-fx-font-family: georgia; -fx-font-weight: 900;" text="Enter P.R. No." textFill="#909090" />
+      <Button fx:id="btn1" layoutX="654.0" layoutY="70.0" mnemonicParsing="false" onAction="#submitaction" prefHeight="21.0" prefWidth="77.0" style="-fx-background-color: #a6a6a6;" text="Submit" textFill="WHITE" />
+      <TableView fx:id="tb1" editable="true" layoutY="120.0" prefHeight="194.0" prefWidth="976.0">
+        <columns>
+            <TableColumn fx:id="Name" prefWidth="180.0" text="Name" />
+            <TableColumn fx:id="CourseTitle" minWidth="0.0" prefWidth="204.0" text="Course Title" />
+            <TableColumn fx:id="Designation" prefWidth="217.0" text="Designation" />
+            <TableColumn fx:id="Level" prefWidth="81.0" text="Level" />
+            <TableColumn fx:id="PMSNeed" prefWidth="108.0" text="PMS Need" />
+            <TableColumn fx:id="Manhours" prefWidth="93.0" text="Manhours" />
+            <TableColumn fx:id="Mandays" prefWidth="92.0" text="Mandays" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn6" layoutX="428.0" layoutY="399.0" mnemonicParsing="false" onAction="#export" prefHeight="31.0" prefWidth="120.0" style="-fx-background-color: #a6a6a6;" text="Export" textFill="WHITE" />
+      <Button fx:id="btn2" layoutX="654.0" layoutY="350.0" mnemonicParsing="false" onAction="#calculateaction" prefHeight="21.0" prefWidth="218.0" style="-fx-background-color: #a6a6a6;" text="Calculate PMS Requirement" textFill="WHITE" />
+      <TextField fx:id="txt2" layoutX="273.0" layoutY="350.0" prefHeight="31.0" prefWidth="328.0" />
+      <Label alignment="CENTER" layoutX="69.0" layoutY="350.0" prefHeight="31.0" prefWidth="186.0" style="-fx-font-family: georgia; -fx-font-weight: 900;" text="Enter Course Title" textFill="#909090" />
+      <Label fx:id="lbl1" alignment="CENTER" layoutX="368.0" layoutY="391.0" prefHeight="21.0" prefWidth="261.0" text="Hidden" textFill="#909090" visible="false" />
+      <Button fx:id="btn3" layoutX="235.0" layoutY="494.0" mnemonicParsing="false" onAction="#YearlyAction" prefHeight="31.0" prefWidth="120.0" style="-fx-background-color: #a6a6a6;" text="Yearly data" textFill="WHITE" />
+      <Button fx:id="btn5" layoutX="601.0" layoutY="494.0" mnemonicParsing="false" onAction="#LevelAction" prefHeight="31.0" prefWidth="140.0" style="-fx-background-color: #a6a6a6;" text="Level-wise Data" textFill="WHITE" />
+      <Button fx:id="btn4" layoutX="419.0" layoutY="494.0" mnemonicParsing="false" onAction="#MonthlyAction" prefHeight="31.0" prefWidth="120.0" style="-fx-background-color: #a6a6a6;" text="Monthly Data" textFill="WHITE" />
+      <Label fx:id="lbl2" alignment="CENTER" layoutX="779.0" layoutY="414.0" prefHeight="31.0" prefWidth="186.0" text="Hidden" textFill="#909090" visible="false" />
+      <Label fx:id="lbl11" alignment="CENTER" layoutX="400.0" layoutY="109.0" prefHeight="21.0" prefWidth="176.0" text="Required!" textFill="RED" visible="false" />
+      <Line endX="884.0" layoutX="96.0" layoutY="459.0" startX="-100.0" />
+      <Button fx:id="btn21" layoutX="54.0" layoutY="70.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #a6a6a6;" text="Back" textFill="WHITE" />
+   </children>
+</Pane>
